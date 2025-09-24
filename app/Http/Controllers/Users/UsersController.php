@@ -33,7 +33,7 @@ class UsersController extends Controller
     }
 
      /**
-     * @OA\Get(path="/users/assignable",
+     * @OA\Get(path="/api/users/assignable",
      *   tags={"Demandes"},
      *   summary="Liste des usagers à qui on peut assigner une demande",
      *   description="Liste des usagers à qui on peut assigner une demande",

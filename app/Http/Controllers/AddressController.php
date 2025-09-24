@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class AddressController
 {
      /**
-     * @OA\Get(path="/addresses",
+     * @OA\Get(path="/api/addresses",
      *   tags={"Clients"},
      *   summary="Liste des adresses postales en autocomplete",
      *   description="Liste des adresses postales en autocomplete",
@@ -74,7 +74,7 @@ class AddressController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index(Request $request)
     {

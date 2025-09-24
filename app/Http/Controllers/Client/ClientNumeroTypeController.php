@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ClientNumeroTypeController
 {
     /**
-     * @OA\Get(path="/client_numero_types",
+     * @OA\Get(path="/api/client_numero_types",
      *   tags={"Clients"},
      *   summary="Liste des types de numéro",
      *   description="Liste des types de numéro",

@@ -24,7 +24,7 @@ class ResetPasswordController extends Controller
 
     /**
      * 
-     * @OA\Post(path="/password/reset",
+     * @OA\Post(path="/api/password/reset",
      *   tags={"Authentification"},
      *   summary="Réinitialisation du mot de passe",
      *   description="Réinitialisation du mot de passe",

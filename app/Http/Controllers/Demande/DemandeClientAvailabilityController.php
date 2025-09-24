@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DemandeClientAvailabilityController
 {
     /**
-     * @OA\Get(path="/demande_client_availabilities",
+     * @OA\Get(path="/api/demande_client_availabilities",
      *   tags={"Demandes"},
      *   summary="Liste des disponibilités clients de la demande",
      *   description="Liste des disponibilités clients de la demande",

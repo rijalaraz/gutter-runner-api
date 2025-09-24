@@ -14,12 +14,12 @@
     },
     "servers": [
         {
-            "url": "http://127.0.0.1:2023/api",
+            "url": "http://localhost",
             "description": "Serveur d'API de démonstration"
         }
     ],
     "paths": {
-        "/addresses": {
+        "/api/addresses": {
             "get": {
                 "tags": [
                     "Clients"
@@ -89,7 +89,7 @@
                 }
             }
         },
-        "/password/email": {
+        "/api/password/email": {
             "post": {
                 "tags": [
                     "Authentification"
@@ -179,7 +179,7 @@
                 }
             }
         },
-        "/login": {
+        "/api/login": {
             "post": {
                 "tags": [
                     "Authentification"
@@ -300,7 +300,7 @@
                 }
             }
         },
-        "/logout": {
+        "/api/logout": {
             "post": {
                 "tags": [
                     "Authentification"
@@ -332,7 +332,7 @@
                 }
             }
         },
-        "/register": {
+        "/api/register": {
             "post": {
                 "tags": [
                     "Inscription"
@@ -520,7 +520,7 @@
                 }
             }
         },
-        "/password/reset": {
+        "/api/password/reset": {
             "post": {
                 "tags": [
                     "Authentification"
@@ -637,7 +637,7 @@
                 }
             }
         },
-        "/email/verify/{user}": {
+        "/api/email/verify/{user}": {
             "get": {
                 "tags": [
                     "Inscription"
@@ -818,7 +818,7 @@
                 }
             }
         },
-        "/email/resend": {
+        "/api/email/resend": {
             "post": {
                 "tags": [
                     "Inscription"
@@ -945,7 +945,7 @@
                 }
             }
         },
-        "/client_company_types": {
+        "/api/client_company_types": {
             "get": {
                 "tags": [
                     "Clients"
@@ -1093,7 +1093,7 @@
                 }
             }
         },
-        "/clients_autocomplete": {
+        "/api/clients_autocomplete": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -1173,7 +1173,7 @@
                 }
             }
         },
-        "/clients": {
+        "/api/clients": {
             "post": {
                 "tags": [
                     "Clients"
@@ -1519,7 +1519,7 @@
                 }
             }
         },
-        "/clients/quick": {
+        "/api/clients/quick": {
             "post": {
                 "tags": [
                     "Demandes"
@@ -1719,7 +1719,7 @@
                 }
             }
         },
-        "/clients/{uuid}": {
+        "/api/clients/{uuid}": {
             "get": {
                 "tags": [
                     "Clients"
@@ -2477,7 +2477,7 @@
                 }
             }
         },
-        "/clients/{uuid}/service_addresses": {
+        "/api/clients/{uuid}/service_addresses": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -2618,7 +2618,7 @@
                 }
             }
         },
-        "/clients/{uuid}/add_service_address": {
+        "/api/clients/{uuid}/add_service_address": {
             "post": {
                 "tags": [
                     "Demandes"
@@ -2780,7 +2780,7 @@
                 }
             }
         },
-        "/client_numero_types": {
+        "/api/client_numero_types": {
             "get": {
                 "tags": [
                     "Clients"
@@ -2844,7 +2844,7 @@
                 }
             }
         },
-        "/client_payment_terms": {
+        "/api/client_payment_terms": {
             "get": {
                 "tags": [
                     "Clients"
@@ -2908,7 +2908,7 @@
                 }
             }
         },
-        "/client_sequences": {
+        "/api/client_sequences": {
             "get": {
                 "tags": [
                     "Clients"
@@ -2959,7 +2959,7 @@
                 }
             }
         },
-        "/client_titres": {
+        "/api/client_titres": {
             "get": {
                 "tags": [
                     "Clients"
@@ -3023,7 +3023,7 @@
                 }
             }
         },
-        "/demande_client_availabilities": {
+        "/api/demande_client_availabilities": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -3087,7 +3087,7 @@
                 }
             }
         },
-        "/demandes": {
+        "/api/demandes": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -3160,7 +3160,7 @@
                         "required": false,
                         "schema": {
                             "type": "string",
-                            "example": "10/06/2021-29/06/2021"
+                            "example": "15/08/2025-10/09/2025"
                         }
                     }
                 ],
@@ -3577,7 +3577,7 @@
                 }
             }
         },
-        "/demande_statuts": {
+        "/api/demande_statuts": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -3632,7 +3632,7 @@
                 }
             }
         },
-        "/demandes/{uuid}": {
+        "/api/demandes/{uuid}": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4054,7 +4054,7 @@
                 }
             }
         },
-        "/demande_date_filter_interval": {
+        "/api/demande_date_filter_interval": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4119,7 +4119,7 @@
                 }
             }
         },
-        "/demande_actions": {
+        "/api/demande_actions": {
             "post": {
                 "tags": [
                     "Demandes"
@@ -4216,7 +4216,7 @@
                 }
             }
         },
-        "/demande_product_presentations": {
+        "/api/demande_product_presentations": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4285,7 +4285,7 @@
                 }
             }
         },
-        "/demande_sequences": {
+        "/api/demande_sequences": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4336,7 +4336,7 @@
                 }
             }
         },
-        "/demande_services": {
+        "/api/demande_services": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4400,7 +4400,7 @@
                 }
             }
         },
-        "/demande_sources": {
+        "/api/demande_sources": {
             "get": {
                 "tags": [
                     "Demandes"
@@ -4464,7 +4464,7 @@
                 }
             }
         },
-        "/plans": {
+        "/api/plans": {
             "get": {
                 "tags": [
                     "Inscription"
@@ -4613,7 +4613,7 @@
                 }
             }
         },
-        "/provinces": {
+        "/api/provinces": {
             "get": {
                 "tags": [
                     "Clients"
@@ -4682,7 +4682,7 @@
                 }
             }
         },
-        "/tags": {
+        "/api/tags": {
             "get": {
                 "tags": [
                     "Clients"
@@ -4766,7 +4766,7 @@
                 }
             }
         },
-        "/permissions": {
+        "/api/permissions": {
             "get": {
                 "tags": [
                     "Roles et Permissions"
@@ -4893,7 +4893,7 @@
                 }
             }
         },
-        "/users/assignable": {
+        "/api/users/assignable": {
             "get": {
                 "tags": [
                     "Demandes"

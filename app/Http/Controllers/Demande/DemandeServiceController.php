@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DemandeServiceController
 {
      /**
-     * @OA\Get(path="/demande_services",
+     * @OA\Get(path="/api/demande_services",
      *   tags={"Demandes"},
      *   summary="Liste des services de demande",
      *   description="Liste des services de demande",
@@ -70,7 +70,7 @@ class DemandeServiceController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index()
     {

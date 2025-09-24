@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ClientPaymentTermController
 {
     /**
-     * @OA\Get(path="/client_payment_terms",
+     * @OA\Get(path="/api/client_payment_terms",
      *   tags={"Clients"},
      *   summary="Liste des termes de paiement",
      *   description="Liste des termes de paiement",

@@ -38,7 +38,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Get(path="/clients_autocomplete",
+     * @OA\Get(path="/api/clients_autocomplete",
      *   tags={"Demandes"},
      *   summary="Liste des clients en autocomplete",
      *   description="Liste des clients en autocomplete",
@@ -131,7 +131,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Post(path="/clients",
+     * @OA\Post(path="/api/clients",
      *   tags={"Clients"},
      *   summary="Création d'un client",
      *   description="Création d'un client",
@@ -508,7 +508,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Post(path="/clients/quick",
+     * @OA\Post(path="/api/clients/quick",
      *   tags={"Demandes"},
      *   summary="Ajout rapide d'un nouveau client",
      *   description="Ajout rapide d'un nouveau client",
@@ -811,7 +811,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Get(path="/clients/{uuid}",
+     * @OA\Get(path="/api/clients/{uuid}",
      *   tags={"Clients"},
      *   summary="Affichage d'un client",
      *   description="Affichage d'un client",
@@ -1234,7 +1234,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Get(path="/clients/{uuid}/service_addresses",
+     * @OA\Get(path="/api/clients/{uuid}/service_addresses",
      *   tags={"Demandes"},
      *   summary="Liste des adresses de service d'un client",
      *   description="Liste des adresses de service d'un client",
@@ -1390,7 +1390,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Put(path="/clients/{uuid}",
+     * @OA\Put(path="/api/clients/{uuid}",
      *   tags={"Clients"},
      *   summary="Modification d'un client",
      *   description="Modification d'un client",
@@ -1758,7 +1758,7 @@ class ClientController extends Controller
     }
 
     /**
-     * @OA\Post(path="/clients/{uuid}/add_service_address",
+     * @OA\Post(path="/api/clients/{uuid}/add_service_address",
      *   tags={"Demandes"},
      *   summary="Ajout d'une adresse de service à un client",
      *   description="Ajout d'une adresse de service à un client",

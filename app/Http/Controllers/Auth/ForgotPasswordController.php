@@ -24,7 +24,7 @@ class ForgotPasswordController extends Controller
 
     /**
      * 
-     * @OA\Post(path="/password/email",
+     * @OA\Post(path="/api/password/email",
      *   tags={"Authentification"},
      *   summary="Envoi du lien de réinitialisation du mot de passe",
      *   description="Mot de passe oublié, email de réinitialisation",

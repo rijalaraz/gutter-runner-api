@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 class DemandeSequenceController
 {
     /**
-     * @OA\Get(path="/demande_sequences",
+     * @OA\Get(path="/api/demande_sequences",
      *   tags={"Demandes"},
      *   summary="Numéro de séquence suivant des demandes",
      *   description="Numéro de séquence suivant des demandes",
@@ -57,7 +57,7 @@ class DemandeSequenceController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index()
     {

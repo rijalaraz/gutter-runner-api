@@ -26,7 +26,7 @@ class LoginController extends Controller
 
     /**
      *
-     * @OA\Post(path="/login",
+     * @OA\Post(path="/api/login",
      *   tags={"Authentification"},
      *   summary="Connecte l'utilisateur au système",
      *   description="Connexion de l'utilisateur au système",
@@ -240,7 +240,7 @@ class LoginController extends Controller
     }
 
     /**
-     * @OA\Post(path="/logout",
+     * @OA\Post(path="/api/logout",
      *   tags={"Authentification"},
      *   summary="Déconnexion de l'utilisateur du système",
      *   description="Déconnexion de l'utilisateur du système",

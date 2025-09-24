@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class TagController
 {
      /**
-     * @OA\Get(path="/tags",
+     * @OA\Get(path="/api/tags",
      *   tags={"Clients"},
      *   summary="Liste des étiquettes en autocomplete",
      *   description="Liste des étiquettes en autocomplete",
@@ -89,7 +89,7 @@ class TagController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index(Request $request)
     {

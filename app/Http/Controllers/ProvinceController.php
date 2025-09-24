@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ProvinceController
 {
     /**
-     * @OA\Get(path="/provinces",
+     * @OA\Get(path="/api/provinces",
      *   tags={"Clients"},
      *   summary="Liste des provinces",
      *   description="Liste des provinces",
@@ -76,7 +76,7 @@ class ProvinceController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index()
     {

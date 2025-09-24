@@ -18,7 +18,7 @@ class PermissionsController extends Controller
     }
 
     /**
-     * @OA\Get(path="/permissions",
+     * @OA\Get(path="/api/permissions",
      *   tags={"Roles et Permissions"},
      *   summary="Liste des permissions",
      *   description="Liste des permissions",
@@ -148,7 +148,7 @@ class PermissionsController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index(Request $request)
     {

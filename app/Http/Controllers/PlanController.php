@@ -12,7 +12,7 @@ use Illuminate\Validation\Rule;
 class PlanController
 {
     /**
-     * @OA\Get(path="/plans",
+     * @OA\Get(path="/api/plans",
      *   tags={"Inscription"},
      *   summary="Liste des plans d'abonnement",
      *   description="Liste des plans d'abonnement",
@@ -179,7 +179,7 @@ class PlanController
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function index()
     {

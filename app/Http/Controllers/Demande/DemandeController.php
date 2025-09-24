@@ -43,7 +43,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Get(path="/demandes",
+     * @OA\Get(path="/api/demandes",
      *   tags={"Demandes"},
      *   summary="Liste des demandes",
      *   description="Liste des demandes",
@@ -105,7 +105,7 @@ class DemandeController extends Controller
      *      in="query",
      *      @OA\Schema(
      *          type="string",
-     *          example="10/06/2021-29/06/2021"
+     *          example="15/08/2025-10/09/2025"
      *      ),
      *      description="Intervalle de dates",
      *   ),
@@ -145,7 +145,7 @@ class DemandeController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return DemandeCollection
      */
     public function index(Request $request)
     {
@@ -279,7 +279,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Get(path="/demande_statuts",
+     * @OA\Get(path="/api/demande_statuts",
      *   tags={"Demandes"},
      *   summary="Liste des statuts de demandes",
      *   description="Liste des statuts de demandes",
@@ -330,7 +330,7 @@ class DemandeController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function statutList()
     {
@@ -347,7 +347,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Post(path="/demandes",
+     * @OA\Post(path="/api/demandes",
      *   tags={"Demandes"},
      *   summary="Création d'une demande",
      *   description="Création d'une demande",
@@ -748,7 +748,7 @@ class DemandeController extends Controller
      * Handle a demande creation request for the application.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse|Response
      */
     public function store(Request $request)
     {
@@ -1177,7 +1177,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Get(path="/demandes/{uuid}",
+     * @OA\Get(path="/api/demandes/{uuid}",
      *   tags={"Demandes"},
      *   summary="Affichage d'une demande",
      *   description="Affichage d'une demande",
@@ -1633,7 +1633,7 @@ class DemandeController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return DemandeResource
      */
     public function show(Demande $demande)
     {
@@ -1650,7 +1650,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Get(path="/demande_date_filter_interval",
+     * @OA\Get(path="/api/demande_date_filter_interval",
      *   tags={"Demandes"},
      *   summary="Intervalle de dates correspondant à chaque filtre de dates",
      *   description="Intervalle de dates correspondant à chaque filtre de dates",
@@ -1709,7 +1709,7 @@ class DemandeController extends Controller
      *
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return mixed
      */
     public function getDateFilterInterval(Request $request)
     {
@@ -1783,7 +1783,7 @@ class DemandeController extends Controller
     }
 
     /**
-     * @OA\Post(path="/demande_actions",
+     * @OA\Post(path="/api/demande_actions",
      *   tags={"Demandes"},
      *   summary="Actions groupées sur des demandes",
      *   description="Actions groupées sur des demandes",
@@ -1864,7 +1864,7 @@ class DemandeController extends Controller
      * Handle a client creation request for the application.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\JsonResponse|Response
      */
     public function act(Request $request)
     {

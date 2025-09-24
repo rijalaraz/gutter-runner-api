@@ -37,7 +37,7 @@ class RegisterController extends Controller
     }
 
     /**
-     * @OA\Post(path="/register",
+     * @OA\Post(path="/api/register",
      *   tags={"Inscription"},
      *   summary="Inscription d'un utilisateur",
      *   description="Inscription d'un utilisateur",

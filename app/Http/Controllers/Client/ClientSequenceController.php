@@ -10,7 +10,7 @@ use Illuminate\Support\Str;
 class ClientSequenceController
 {
     /**
-     * @OA\Get(path="/client_sequences",
+     * @OA\Get(path="/api/client_sequences",
      *   tags={"Clients"},
      *   summary="Numéro de séquence suivant des clients",
      *   description="Numéro de séquence suivant des clients",

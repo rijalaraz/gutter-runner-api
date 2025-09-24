@@ -23,7 +23,7 @@ class VerificationController extends Controller
     }
 
     /**
-     * @OA\Get(path="/email/verify/{user}",
+     * @OA\Get(path="/api/email/verify/{user}",
      *   tags={"Inscription"},
      *   summary="Vérification de l'adresse email d'un utilisateur inscrit",
      *   description="Vérification de l'adresse email d'un utilisateur inscrit",
@@ -242,7 +242,7 @@ class VerificationController extends Controller
     }
 
     /**
-     * @OA\Post(path="/email/resend",
+     * @OA\Post(path="/api/email/resend",
      *   tags={"Inscription"},
      *   summary="Renvoi du courriel de vérification de l'adresse email d'un utilisateur inscrit",
      *   description="Renvoi du courriel de vérification de l'adresse email d'un utilisateur inscrit",

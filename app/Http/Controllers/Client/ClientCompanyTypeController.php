@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Validator;
 class ClientCompanyTypeController
 {
     /**
-     * @OA\Get(path="/client_company_types",
+     * @OA\Get(path="/api/client_company_types",
      *   tags={"Clients"},
      *   summary="Liste des types de compagnie",
      *   description="Liste des types de compagnie",
@@ -85,7 +85,7 @@ class ClientCompanyTypeController
     }
 
       /**
-     * @OA\Post(path="/client_company_types",
+     * @OA\Post(path="/api/client_company_types",
      *   tags={"Clients"},
      *   summary="Création d'un type de compagnie",
      *   description="Création d'un type de compagnie",

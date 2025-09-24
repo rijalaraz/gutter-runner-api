@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class ClientTitreController
 {
      /**
-     * @OA\Get(path="/client_titres",
+     * @OA\Get(path="/api/client_titres",
      *   tags={"Clients"},
      *   summary="Liste des titres",
      *   description="Liste des titres",
